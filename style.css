@@ -1,0 +1,103 @@
+*{
+    font-family: "Archivo Black", sans-serif;
+}
+:root {
+    --white: #fff;
+    --head-blue: #2c3e50;
+    --aloha: #18bc9c;
+    --hover: red;
+    --footer: #233140;
+    --dark: #333333;
+    --button: #15bc9c;
+}
+a{
+    text-decoration: none;
+}
+.small-caps{
+    font-variant: small-caps;
+}
+ .white-heading h3::before,
+ .white-heading h3::after {
+    content: "";
+    height: 4px;
+    width: 80px;
+    background-color: var(--white);
+ }
+.blue-heading {
+    color: var(--dark);
+ }
+.blue-heading h3::before,
+.blue-heading h3::after {
+    content: "";
+    height: 4px;
+    width: 80px;
+    background-color: var(--head-blue);
+}
+.blue-heading i{
+ color: var(--head-blue);
+}
+
+header{
+    background-color: var(--head-blue);
+}
+.navbar-brand{
+    font-size: 2.75rem;
+}
+#menu-1{
+    background: var(--head-blue);
+    left: 0;
+    padding-left: 15px;
+}
+#menu-1 a, #menu a{
+    color: var(--white);
+ }
+#menu a:hover{
+     color: var(--hover);
+ }
+#menu-1 a:hover{
+     color: var(--hover);
+ }
+ .profile{
+    background: var(--aloha);
+ }
+ .profile h2{
+    font-size: 3.5rem;
+ }
+ .portfolio .row{
+    gap: 24px;
+ }  
+ .about{
+    background: var(--aloha);
+ }
+.about button{
+    background: var(--aloha);
+    border-color: var(--white);
+    border-width: 2px;
+}
+.about button:active {
+    transform: translateY(2px);
+}
+.contact-me button{
+    background: var(--button);
+}
+.bottom{
+    background: var(--head-blue);
+}
+.bottom a{
+    color: var(--aloha);
+}
+.bottom h4{
+    width: 40px;
+    height: 40px;
+}
+ footer{
+    background: var(--footer);
+ }
+ @media screen and (max-width: 968px){
+    .bottom h3{
+        font-size: 18px;
+    }
+    .bottom div{
+        font-size: 13px;
+    }
+ }
